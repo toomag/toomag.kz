@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOOMAG | Кормовые добавки и концентраты для КРС</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <section class="hero" id="hero">
+    <div class="hero-img" aria-hidden="true">
+      <img src="korova.jpeg" alt="" />
+    </div>
+
+    <div class="hero-header">
+      <h1>TOOMAG</h1>
+      <p>СИЛА ЗДОРОВЬЯ ДЛЯ ВАШЕГО СТАДА</p>
+    </div>
+
+    <canvas class="hero-canvas"></canvas>
+    <div class="hero-content">
+      <h2 class="reveal-words">
+        Современные биодобавки для крупного рогатого скота, которые повышают продуктивность, укрепляют иммунитет и улучшают качество молока и мяса.
+      </h2>
+    </div>
+
+    
+  </section>
+
+  <section class="usage" id="usage">
+  <div class="usage__wrap">
+    <div class="usage__left">
+      <h2 class="usage__title">Как использовать</h2>
+      <p class="usage__subtitle">
+        Подбирайте дозировку по типу продукта и категории животных.
+      </p>
+
+      <div class="usage__cards">
+        <article class="u-card from-left" style="--d: 0ms; --x: -10px">
+          <h3>Дозировка для молочного КРС</h3>
+          <p>MAG Agro Dairy Concentrate: 1–3 кг на голову в сутки или 10–20% от комбикорма.</p>
+        </article>
+
+        <article class="u-card from-right" style="--d: 120ms; --x: 18px">
+          <h3>Дозировка белкового концентрата</h3>
+          <p>MAG Agro Protein Concentrate 35%: 5–20% от комбикорма в составе рациона.</p>
+        </article>
+
+        <article class="u-card from-left" style="--d: 240ms; --x: 8px">
+          <h3>Дозировка для телят</h3>
+          <p>MAG Agro Calf Starter Concentrate: 0.5–2 кг на голову в сутки.</p>
+        </article>
+
+        <article class="u-card from-right" style="--d: 360ms; --x: -16px">
+          <h3>Рекомендации</h3>
+          <p>Премиксы и дрожжи смешивайте равномерно с кормом. Дозировку уточняйте по рациону и возрасту.</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="usage__right" aria-hidden="true">
+      <!-- замени на своё изображение коровы -->
+      <img class="usage__cow" src="korova.png" alt="" />
+    </div>
+  </div>
+</section>
+
+<section class="cats" id="products">
+  <div class="cats__wrap">
+    <h2 class="cats__title">Наши продукты</h2>
+
+    <div class="cats__grid" id="catsGrid"></div>
+  </div>
+
+  <!-- Modal -->
+  <div class="cmodal" id="cmodal" aria-hidden="true">
+    <div class="cmodal__backdrop" data-close="true"></div>
+
+    <div class="cmodal__dialog" role="dialog" aria-modal="true" aria-labelledby="cmodalTitle">
+      <button class="cmodal__close" type="button" data-close="true" aria-label="Закрыть">✕</button>
+
+      <div class="cmodal__content">
+        <div class="cmodal__media">
+          <img id="cmodalImg" src="" alt="" />
+        </div>
+
+        <div class="cmodal__text">
+          <h3 class="cmodal__title" id="cmodalTitle"></h3>
+          <p class="cmodal__sub" id="cmodalSub"></p>
+
+          <div class="cmodal__block">
+            <h4>Описание</h4>
+            <p id="cmodalDesc"></p>
+          </div>
+
+          <div class="cmodal__cols">
+            <div class="cmodal__block">
+              <h4>Преимущества</h4>
+              <ul id="cmodalList"></ul>
+            </div>
+
+            <div class="cmodal__block">
+              <h4>Дозировка и назначение</h4>
+              <p id="cmodalHow"></p>
+            </div>
+          </div>
+
+          <div class="cmodal__actions">
+            <a class="btn btn--ghost" href="#contacts">Консультация</a>
+            <button class="btn btn--primary" type="button" data-close="true">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="aboutt" id="about">
+  <div class="about__wrap">
+
+    <div class="about__left">
+      <h2 class="about__title">
+        TOOMAG: <br>
+        Решения для КРС
+      </h2>
+
+      <p class="about__text">
+        В линейке представлены живые дрожжи, витаминно-минеральные премиксы и
+        концентраты для молочного КРС, мясного КРС и телят. Продукты направлены
+        на рост продуктивности, улучшение пищеварения и поддержку здоровья животных.
+      </p>
+
+      <div class="about__stats">
+        <div class="stat">
+          <div class="stat__num">5</div>
+          <div class="stat__label">Продуктов в линейке</div>
+        </div>
+
+        <div class="stat">
+          <div class="stat__num">A, D3, E</div>
+          <div class="stat__label">Ключевые витамины</div>
+        </div>
+
+        <div class="stat">
+          <div class="stat__num">10–20%</div>
+          <div class="stat__label">Потенциал роста надоев*</div>
+        </div>
+
+        <div class="stat">
+          <div class="stat__num">35%</div>
+          <div class="stat__label">Протеин в концентрате</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about__right">
+      <div class="about__card">
+        <h3>Rumen Yeast</h3>
+        <p>Живые дрожжи Saccharomyces cerevisiae помогают улучшить пищеварение и увеличить надой.</p>
+      </div>
+
+      <div class="about__card">
+        <h3>Витаминно-минеральный премикс</h3>
+        <p>Содержит Vitamin A, D3, E, Calcium, Phosphorus, Zinc и Selenium. Используется на всех фермах.</p>
+      </div>
+
+      <div class="about__card">
+        <h3>Концентраты MAG Agro</h3>
+        <p>Dairy, Protein 35% и Calf Starter Concentrate для молочного и мясного КРС, а также телят.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+  <section class="contact-section">
+  <div class="contact-wrap">
+
+    <!-- Left -->
+    <div class="contact-left">
+      <h2 class="contact-brand">TOOMAG</h2>
+
+      <p class="contact-description">
+        Профессиональные решения в агросфере.
+        Консультации, сопровождение и современные технологии
+        для развития вашего хозяйства.
+      </p>
+
+      <div class="contact-info">
+
+        <!-- Phone -->
+        <div class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M22 16.92V21a2 2 0 0 1-2.18 2 
+              19.86 19.86 0 0 1-8.63-3.07 
+              19.5 19.5 0 0 1-6-6 
+              A19.86 19.86 0 0 1 2.08 4.18 
+              2 2 0 0 1 4.06 2h4.09a2 2 0 0 1 2 1.72 
+              12.84 12.84 0 0 0 .7 2.81 
+              2 2 0 0 1-.45 2.11L9 10a16 16 0 0 0 6 6 
+              l1.36-1.36a2 2 0 0 1 2.11-.45 
+              12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span>+7 (776) 746 4242</span>
+        </div>
+
+        <!-- Email -->
+        <div class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M4 4h16v16H4z" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M4 4l8 8 8-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span>bass.bai@bk.ru</span>
+        </div>
+
+        <!-- Location -->
+        <div class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 21s-6-5.33-6-10a6 6 0 1 1 12 0c0 4.67-6 10-6 10z"
+              stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="12" cy="11" r="2.5"
+              stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+          </div>
+          <span>Астана, шоссе Коргалжын 2, Офис №8</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Right -->
+    <div class="contact-card">
+      <h3>Заказать услугу</h3>
+      <p>
+        Свяжитесь с нами для получения консультации
+        и обсуждения деталей вашего проекта.
+      </p>
+
+      <a 
+        href="https://wa.me/77767464242" 
+        target="_blank"
+        class="contact-btn"
+      >
+        Связаться в WhatsApp
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- GSAP (free) -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+  <!-- Your code (ES modules) -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>
